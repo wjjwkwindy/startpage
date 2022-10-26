@@ -6,19 +6,23 @@
             "links": [
                 {
                     "name": "NPM",
-                    "url": "http://nginx.arcticalpaca.com/"
+                    "url": "https://nginx.arcticalpaca.com/"
                 },
                 {
                     "name": "Portainer",
-                    "url": "http://portainer.arcticalpaca.com/#!/home"
+                    "url": "https://portainer.arcticalpaca.com/#!/home"
                 },
                 {
                     "name": "Smokeping",
-                    "url": "http://smokeping.arcticalpaca.com/smokeping/"
+                    "url": "https://smokeping.arcticalpaca.com/smokeping/"
                 },
                 {
                     "name": "Jenkins",
                     "url": "http://139.155.15.50:8080/"
+                },
+                {
+                    "name": "Status",
+                    "url": "https://status.arcticalpaca.com/"
                 }
             ]
         },
