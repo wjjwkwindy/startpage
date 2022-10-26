@@ -1,0 +1,30 @@
+{
+    "version": "0.1",
+    "stock": [
+        {
+            "cate": "技术",
+            "links": [
+                {
+                    "name": "NPM",
+                    "url": "http://nginx.arcticalpaca.com/"
+                },
+                {
+                    "name": "Portainer",
+                    "url": "http://portainer.arcticalpaca.com/#!/home"
+                },
+                {
+                    "name": "Smokeping",
+                    "url": "http://smokeping.arcticalpaca.com/smokeping/"
+                },
+                {
+                    "name": "Jenkins",
+                    "url": "http://139.155.15.50:8080/"
+                }
+            ]
+        },
+        {
+            "cate": "工作",
+            "links": []
+        }
+    ]
+}

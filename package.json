@@ -1,0 +1,16 @@
+{
+  "name": "startpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i .\\src\\css\\startpage.css -o .\\dist\\css\\startpage.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
