@@ -55,3 +55,9 @@ body{
     -webkit-mask-size: 100% 100%;
     width: 1.2em
 }
+
+/* 心知天气插件 */
+.sc-gisBJw{
+    left: auto !important;
+    right: 0.25rem !important;
+}
