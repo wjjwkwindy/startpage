@@ -1,6 +1,7 @@
 $.loadJSON('config.json', (configJSON) => {
     let linkCount = 0,
-        cateCount = 0;
+        cateCount = 0,
+        urlReg = /http(s?):\/\/(.+)\//;
 
     let linkCard = document.querySelector('#test>div');
 
@@ -11,6 +12,7 @@ $.loadJSON('config.json', (configJSON) => {
             let linkCardTemp = linkCard.cloneNode(true);
             linkCardTemp.querySelector('h2').textContent = link.name;
             linkCardTemp.querySelector('a').href = link.url;
+            linkCardTemp.querySelector('span').textContent = urlReg.exec(link.url)[2]; // 匹配网址
             document.querySelector('#test').appendChild(linkCardTemp);
         }
     }
