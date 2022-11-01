@@ -19,3 +19,24 @@ $.loadJSON('config.json', (configJSON) => {
     document.querySelector('#linkCount').textContent = linkCount;
     document.querySelector('#cateCount').textContent = cateCount;
 });
+
+function uptime() {
+    $.loadJSON('http://207.246.84.123:8090/https://status.arcticalpaca.com/json/stats.json', (data) => {
+        var tempHTML = '';
+        for (const server of data.servers) {
+            let serverLoad = server['load_1'] || '0.00';// 如果load为0，这里进行处理
+            tempHTML += `
+                <div class="px-1 border-l border-r border-white first:border-none last:border-none">
+                    <span>${server['location']}</span>
+                    <span>${serverLoad.toString().padEnd(4,0)}</span>
+                </div>
+            `;
+        }
+        document.querySelector('#server-status').innerHTML = tempHTML;
+    })
+}
+
+uptime();
+setInterval(() => {
+    uptime();
+}, 2000);
