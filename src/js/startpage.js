@@ -30,7 +30,7 @@ function uptime() {
             tempHTML += `
                 <div class="px-1 border-l border-r border-white first:border-none last:border-none">
                     <span>${server['location']}</span>
-                    <span>${serverLoad.toString().padEnd(4,0)}</span>
+                    <span>${serverLoad.toString().padEnd(4, 0)}</span>
                 </div>
             `;
         }
@@ -41,4 +41,4 @@ function uptime() {
 uptime();
 setInterval(() => {
     uptime();
-}, 2000);
+}, 5000);
