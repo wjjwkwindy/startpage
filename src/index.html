@@ -28,19 +28,19 @@
                     <div class="flex flex-row justify-between items-center gap-8">
                         <div class="flex flex-col p-4">
                             <span>总共</span>
-                            <span class="text-green text-4xl font-bold mt-1" id="linkCount"></span>
-                            <span class="mt-1">个书签</span>
-                        </div>
-                        <div class="flex flex-col p-4">
-                            <span>总共</span>
-                            <span class="text-green text-4xl font-bold mt-1">N/A</span>
-                            <span class="mt-1">次访问</span>
-                        </div>
-                        <div class="flex flex-col p-4">
-                            <span>总共</span>
                             <span class="text-green text-4xl font-bold mt-1" id="cateCount"></span>
                             <span class="mt-1">个分类</span>
                         </div>
+                        <div class="flex flex-col p-4">
+                            <span>总共</span>
+                            <span class="text-green text-4xl font-bold mt-1" id="linkCount"></span>
+                            <span class="mt-1">个书签</span>
+                        </div>
+                        <!-- <div class="flex flex-col p-4">
+                            <span>总共</span>
+                            <span class="text-green text-4xl font-bold mt-1">N/A</span>
+                            <span class="mt-1">次访问</span>
+                        </div> -->
                     </div>
                 </div>
                 
@@ -54,7 +54,7 @@
                 <div class="p-4">
                     <div>
                         <h2 class="text-2xl font-extrabold tracking-tight">分类 Cate</h2>
-                        <div class="grid grid-cols-1 py-4 gap-y-4">
+                        <div class="grid grid-cols-1 py-4 gap-y-4" id="cate-container">
                             <button class="flex border rounded-lg px-4 py-3 text-left hover:border-slate-600 transition-colors duration-150 border-slate-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2" width="1rem" height="1rem" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -62,30 +62,12 @@
                                  </svg>
                                  <span>技术</span>
                             </button>
-                            <button class="flex border rounded-lg px-4 py-3 text-left hover:border-slate-600 transition-colors duration-150">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2" width="1rem" height="1rem" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M3 12l3 3l3 -3l-3 -3z"></path>
-                                    <path d="M15 12l3 3l3 -3l-3 -3z"></path>
-                                    <path d="M9 6l3 3l3 -3l-3 -3z"></path>
-                                    <path d="M9 18l3 3l3 -3l-3 -3z"></path>
-                                 </svg>
-                                 <spa>工作</spa>
-                            </button>
-                            <button class="flex border rounded-lg px-4 py-3 text-left hover:border-slate-600 transition-colors duration-150">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2" width="1rem" height="1rem" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                                 </svg>
-                                 <span>个人</span>
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="grid gap-x-6 gap-y-8" style="grid-template-columns: repeat(auto-fit,minmax(300px,1fr));" id="test">
+                <div class="grid gap-x-6 gap-y-8" style="grid-template-columns: repeat(3,1fr);" id="card-container">
                     <div class="bg-white border rounded-lg p-5 cursor-pointer hover:border-slate-600 relative flex flex-col group">
                         <a href="#" target="_blank" class="absolute inset-0">
                             <div class="opacity-0 group-hover:opacity-100 absolute top-3 right-3 transition-opacity duration-200 ease-in-out">
