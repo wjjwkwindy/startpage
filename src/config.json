@@ -3,15 +3,17 @@
     "stock": [
         {
             "cate": "技术",
-            "icon":"<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M3 12l3 3l3 -3l-3 -3z'></path><path d='M15 12l3 3l3 -3l-3 -3z'></path><path d='M9 6l3 3l3 -3l-3 -3z'></path><path d='M9 18l3 3l3 -3l-3 -3z'></path></svg>",
-            "links": [{
-                "name":"Github",
-                "url":"https://www.github.com"
-            }]
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M3 12l3 3l3 -3l-3 -3z'></path><path d='M15 12l3 3l3 -3l-3 -3z'></path><path d='M9 6l3 3l3 -3l-3 -3z'></path><path d='M9 18l3 3l3 -3l-3 -3z'></path></svg>",
+            "links": [
+                {
+                    "name": "Github",
+                    "url": "https://www.github.com"
+                }
+            ]
         },
         {
             "cate": "服务器",
-            "icon":"<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2'></path></svg>",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2'></path></svg>",
             "links": [
                 {
                     "name": "NPM",
@@ -41,11 +43,13 @@
         },
         {
             "cate": "个人",
-            "icon":"<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><circle cx='12' cy='7' r='4'></circle><path d='M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2'></path></svg>",
-            "links": [{
-                "name":"百度",
-                "url":"https://www.baidu.com/"
-            }]
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='inline-block w-6 h-6 mr-2' width='1rem' height='1rem' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><circle cx='12' cy='7' r='4'></circle><path d='M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2'></path></svg>",
+            "links": [
+                {
+                    "name": "百度",
+                    "url": "https://www.baidu.com/"
+                }
+            ]
         }
     ]
 }
