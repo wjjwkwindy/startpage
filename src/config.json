@@ -32,6 +32,10 @@
                 {
                     "name": "Status",
                     "url": "https://status.arcticalpaca.com/"
+                },
+                {
+                    "name": "Better Uptime",
+                    "url": "https://arcticalpaca.betteruptime.com/"
                 }
             ]
         },
