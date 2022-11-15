@@ -1,4 +1,4 @@
-const $ = {};
+export const $ = {};
 $.loadJSON = function (url, callback) {
     const request = new XMLHttpRequest();
     request.overrideMimeType('application/json');

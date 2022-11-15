@@ -1,9 +1,9 @@
-let configJSON = {};
+import { $ } from './utils';
+import './weather';
+import '../css/startpage.css';
+import configJSON from'../config.json';
 
-$.loadJSON('config.json', (reponse) => {
-    configJSON = reponse;
-    forCate();
-});
+forCate();
 
 // 循环链接
 function forLlinks(cate) {
@@ -52,11 +52,11 @@ function forCate() {
 
         cateCardTemp.addEventListener('click', function () {
             forLlinks(this.dataset.catename);
-            Array.from(this.parentElement.children).forEach(el => {
+            Array.from(this.parentElement.children).forEach((el) => {
                 el.classList.remove('border-slate-600');
-            })
+            });
             this.classList.add('border-slate-600');
-        })
+        });
 
         document.querySelector('#cate-container').appendChild(cateCardTemp);
     }
@@ -69,7 +69,7 @@ function uptime() {
     $.loadJSON('http://207.246.84.123:8090/https://status.arcticalpaca.com/json/stats.json', (data) => {
         var tempHTML = '';
         for (const server of data.servers) {
-            let serverLoad = server['load_1'] || '0.00';// 如果load为0，这里进行处理
+            let serverLoad = server['load_1'] || '0.00'; // 如果load为0，这里进行处理
             tempHTML += `
                 <div class="px-1 border-l border-r border-white first:border-none last:border-none">
                     <span>${server['location']}</span>
@@ -78,7 +78,7 @@ function uptime() {
             `;
         }
         document.querySelector('#server-status').innerHTML = tempHTML;
-    })
+    });
 }
 
 uptime();
