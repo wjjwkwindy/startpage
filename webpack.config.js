@@ -14,17 +14,21 @@ module.exports = {
     module: {
         rules: [
             {
+                test:/\.html$/i,
+                use:['html-loader']
+            },
+            {
                 test: /\.css$/i,
                 use: [MiniCssExtractplugin.loader, 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(png|jpe?g|gif|webp)$/i,
-                type: 'asset/resource', // asset 为自动选择，小于8k，inline，否则为resource
-                // parser: {
-                //     dataUrlCondition: {
-                //         maxSize: 10 * 1024,
-                //     },
-                // },
+                type: 'asset', // asset 为自动选择，小于8k，inline，否则为resource
+                parser: {
+                    dataUrlCondition: {
+                        maxSize: 10 * 1024,
+                    },
+                },
                 generator: {
                     filename: 'static/imgs/[hash:8][ext][query]',
                 },
