@@ -48,6 +48,10 @@
                 {
                     "name": "百度",
                     "url": "https://www.baidu.com/"
+                },
+                {
+                    "name": "新型冠状病毒肺炎疫情分布",
+                    "url": "https://2019ncov.chinacdc.cn/2019-nCoV/index.html"
                 }
             ]
         }
