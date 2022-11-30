@@ -8,6 +8,10 @@
                 {
                     "name": "Github",
                     "url": "https://www.github.com"
+                },
+                {
+                    "name": "Cloudflare",
+                    "url": "https://www.cloudflare.com"
                 }
             ]
         },
