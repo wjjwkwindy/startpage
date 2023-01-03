@@ -42,6 +42,10 @@
                 {
                     "name": "Better Uptime",
                     "url": "https://arcticalpaca.betteruptime.com/"
+                },
+                {
+                    "name": "zLib",
+                    "url": "https://zlib.arcticalpaca.com/"
                 }
             ]
         },
